@@ -1,0 +1,132 @@
+body {
+  background-color: white;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* sets font size to 16 */
+  line-height: 1.6; /* sets line height to 1.6 */
+}
+
+h1 {
+  font-size: 30px;
+  color: #0b3538;
+  font-weight: 700;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  padding: 15px;
+}
+
+.grid__item {
+  background-color: #f3f5f5;
+  padding: 15px;
+
+  /* sets width to auto */
+  width: auto;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+button,
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+
+  /* takes the font from the outer container */
+  font-family: inherit;
+  font-size: 16px;
+
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #02648f;
+  color: #ffff !important;
+  text-decoration: none;
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 6px;
+
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* mouse will appear as hand when over the button */
+  cursor: pointer;
+
+  /* opacity will reduce to 80% when hovered over */
+  opacity: 0.8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* this shows it above other content */
+  z-index: 999;
+  overflow: auto;
+  display: grid;
+  text-align: center;
+}
+
+.modal {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.modal-img {
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.modal.close {
+  float: right;
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  color: #777;
+  text-decoration: underline;
+}
+
+.modal h1 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
