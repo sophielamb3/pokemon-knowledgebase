@@ -60,21 +60,17 @@ var pokemonRepository = (function () {
   }
 
 
+
   function showModal(item){
 
-    $modalContainer.html('');
+    $modalBody.html('') //clear the modal-body`
 
-    console.log(item)
-    var htmlInformation = `
-                    <div class="modal">
-                      <button class="modal-close">close</button>
-                      <h4> My name is ${item.name}</h4>
-                      <img src="${item.imageUrl}" />
-                      <h5>I am ${item.height} cm tall!</h5>
-                    </div>
-                      `
+      var htmlInformation = `<div>
+      <h4> My name is ${item.name}</h4>
+      <img src="${item.imageUrl}" />
+      <h5>I am ${item.height} cm tall!</h5>
+      </div>`
 
-    var $modalContent = $modalContainer.html(htmlInformation)
 
     $modalContainer.addClass('is-visible');
   }
