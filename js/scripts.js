@@ -63,6 +63,8 @@ var pokemonRepository = (function () {
 
   function showModal(item){
 
+    var $modalBody = $('.modal-body');
+
     $modalBody.html('') //clear the modal-body`
 
       var htmlInformation = `<div>
