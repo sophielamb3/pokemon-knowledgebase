@@ -89,7 +89,6 @@ button:focus,
   z-index: 999;
   overflow: auto;
   display: grid;
-  text-align: center;
 }
 
 .modal {
