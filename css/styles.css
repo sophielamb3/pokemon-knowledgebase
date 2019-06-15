@@ -29,10 +29,17 @@ h1 {
   width: auto;
 }
 
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;   /* Height of the footer */
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+.page-header {
   text-align: center;
 }
 

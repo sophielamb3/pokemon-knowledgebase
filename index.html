@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2c3e50">
       <a class="navbar-brand" href="#">Pokadex</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,10 +42,16 @@
       </div>
     </nav>
       <!--./ You must include this part -->
+      <div class="page-header">
+        <h1> Welcome to our Pokadex!</h1>
+        <h6> Take a look at our favourite Pokemons and see what skills they posess!</h6>
+        <br>
+      </div>
         <ul class="list-group">
           <li class="btn selectedElement list-group-item" data-toggle="modal" data-target="#modalContainer">
           </li>
         </ul>
+
       <!--./ end include here -->
       <div class="modal fade" id="modalContainer" tabindex="-1" role="dialog" aria-labelledby="modalContainerTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -67,9 +73,7 @@
         </div>
       </div>
 
-    <!-- <div id= "modal-container">
-    </div> -->
-    <footer class="page-footer">
+    <footer id="footer">
       <p> This is my Pokadex footer! </p>
     </footer>
     <script
