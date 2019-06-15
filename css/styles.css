@@ -53,6 +53,7 @@ button,
   /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 6px;
+  margin: 5px;
 
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -69,8 +70,6 @@ button:focus,
   /* opacity will reduce to 80% when hovered over */
   opacity: 0.8;
 }
-
-
 
 #modal-container {
   display: none;
