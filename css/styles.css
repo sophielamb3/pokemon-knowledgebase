@@ -46,7 +46,7 @@ button,
   font-size: 16px;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #02648f;
+  background-color: #27ae60;
   color: #ffff !important;
   text-decoration: none;
 
@@ -71,11 +71,11 @@ button:focus,
   opacity: 0.8;
 }
 
-#modal-container {
+#modalContainer {
   display: none;
 }
 
-#modal-container.is-visible {
+#modalContainer.is-visible {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
