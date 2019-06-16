@@ -3,6 +3,7 @@ var pokemonRepository = (function () {
   var repository = [];
   var apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
   var $modalContainer = $('#modal-container');
+  var $modalBody = $('.modal-body')
 
   function add(item){
     repository.push(item);
@@ -63,16 +64,18 @@ var pokemonRepository = (function () {
 
   function showModal(item){
 
-    var $modalBody = $('.modal-body');
+    $modalContainer.html('');
+    $modalBody.html('')
 
-    $modalBody.html('') //clear the modal-body`
-
-      var htmlInformation = `<div>
-      <h4> My name is ${item.name}</h4>
-      <img src="${item.imageUrl}" />
-      <h5>I am ${item.height} cm tall!</h5>
-      </div>`
-
+    console.log(item)
+    var htmlInformation = `
+                        <div>
+                          <h4> My name is ${item.name}</h4>
+                          <img src="${item.imageUrl}" />
+                          <h5>I am ${item.height} cm tall!</h5>
+                        </div>
+                          `
+    var $modalContent = $modalBody.html(htmlInformation)
 
     $modalContainer.addClass('is-visible');
   }
